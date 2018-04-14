@@ -84,19 +84,13 @@
     	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
         <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Что это</a>
+        	<a id="goUp" href="/" title=""></a>
         </div>
         
         <nav id="menu">
         	<ul id="menu-nav">
-            	<li class="current"><a onclick="mainPage()">Домой</a></li>
-                <li><a href="#about">Метео</a></li>
-                <li><a href="#contact">Термо</a></li>
-                <li><a href="#work">Камеры</a></li>
-                <li><a href="#about">Умывальник</a></li>
-                <li><a href="#contact">Уличный свет</a></li>
-                <li><a href="#work">Домашний свет</a></li>
-                <li><a href="#work">Сигнализация</a></li>
+            	<li class="current"><a onclick="goMain()">Домой</a></li>
+                <li><a onclick="goMeteo()">Метео</a></li>
             </ul>
         </nav>
         
@@ -105,62 +99,20 @@
 <!-- End Header -->
   
 
-
-
 <div id="work" class="page">
 	<div class="container">
         <center>
-    <h2 class="title" id="title">Уличный свет</h2>
-</center>
+            <h2 class="title" id="title">Дача будущего</h2>
             <p>
-                    Это случилось на следующий день, в пятницу.
-
-Прошлогодняя привычка Харухи покидать класс на время перемен в новом учебном году так никуда и не делась. Так что не было ничего удивительного в том, что после звонка об окончании урока наш командир немедленно исчезала. А я и в этом году всё так же обедаю за той же партой вместе с Танигути и Куникидой.
-
-Меня не волновал Танигути, но когда я смотрел на безобидное лицо Куникиды, я не мог избавиться от мыслей о Сасаки, которую встретил несколькими днями ранее. Я старался скрыть это, но он всё равно заметил, что я смотрю на него.
-
-- В чём дело? Тебе так нравится омлет?
-
-Куникида вёл себя в точности как говорила Сасаки, то есть - беспечно.
-
-- Нет, ничего. – ответил я немедля.
-
-- Я удивлён, что мы снова оказались в одном классе.
-
-- Да уж…
-
-Руки Куникиды, ковырявшие палочками оказу[1], замерли и он поднял голову.
-
-- Я очень счастлив. Когда я увидел списки учеников, я просто не мог поверить своим глазам.
-
-А я-то был абсолютно уверен, что ты окажешься в «научном» классе.
-
-- Вначале, я и собирался так поступить. Но, я не очень хорош в гуманитарных предметах, так что я решил посвятить этот год им. Я сосредоточусь на естественных науках на третьем году обучения. Кроме того, в этом году начинается разделение на «гуманитарное» и «научное» направление обучения. Это значит, что будет больший выбор факультативов и метаться между ними станет очень утомительно, особенно во втором семестре.
-
-Что касается Танигути… Ну, мне вообще-то нет до него дела.
-
-- Эй, Кён, это жестоко! – запротестовал Танигути, - На самом деле я хотел попасть в класс с девчонками посимпатичнее. Моя цель была где-то в районе класса «Е»…(2-6)
-
-Произнося это, он начал скользить взглядом между девушками в нашем классе.
-
-- Смотри, совершенно ничего не изменилось. И я всё так же сижу тут с вами…  
+                Дача будущего - это мегапроект по автоматизации загородного участка.
             </p>
-            <center>
-            <form id="contact-form" class="contact-form" action="#">
-                <a>Температура</a>
-                <p class="contact-email">
-                    <b><input style="width: 150px; text-align: center;" id="temp" type="text" placeholder="23" value="" name="email" /></b>
-                </p>
-                <br>
-                <p>
-                    <a style="width: 150px;" id="contact-submit" class="button" onclick="setTemp()">Изменить</a>
-                </p>
-            </form>
+            <img width="320" src="img/bg01.jpg" />
+            <br><br>
+            <img width="320" src="img/bg02.jpg" />
+            <br>
         </center>
     </div>
 </div>
-
-
 
 
 <!-- About Section -->
@@ -171,7 +123,6 @@
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">Обо мне</h2>
-                <h3 class="title-description">Посмотри информацию обо мне</h3>
             </div>
         </div>
     </div>
@@ -186,7 +137,7 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Разработчик</span>
                 </div>
-                <img src="/img/profile/profile-01.jpg" alt="John Doe">
+                <img src="/img/profile/profile-01.jpg" alt="Сергей Денисов">
             </div>            
             <h3 class="profile-name">Сергей Денисов</h3>
             <p class="profile-description">Здесь много текста о том какой я дохера крутой разработчик умных дач</p>
@@ -320,7 +271,7 @@
 <script src="/js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="/js/plugins.js"></script>
 <script src="/js/main.js"></script> <!-- Default JS -->
-<script src="/js/temp.js"></script>
+<script src="/js/modules/modules.js"></script>
 <script src="/js/pages.js"></script>
 <!-- End Js -->
 
