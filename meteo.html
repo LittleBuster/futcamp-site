@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Дача будущего</title>   
+
+<meta name="description" content="Insert Your Site Description" /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/supersized.css" rel="stylesheet">
+<link href="/css/supersized.shutter.css" rel="stylesheet">
+<link href="/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="/css/fonts.css" rel="stylesheet">
+<link href="/css/shortcodes.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
+<link href="/css/supersized.css" rel="stylesheet">
+<link href="/css/supersized.shutter.css" rel="stylesheet">
+<link href="/css/modules/meteo.css" rel="stylesheet">
+
+
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<script src="/js/modernizr.js"></script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
+
+</head>
+
+
+<body>
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+        	<a id="goUp" href="/" title="">Что это</a>
+        </div>
+        
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<li><a onclick="goMain()">Домой</a></li>
+                <li class="current"><a onclick="goMeteo()">Метео</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+  
+
+
+
+<div id="work" class="page">
+	<div class="container">
+        <center>
+            <h2 class="title" id="title"><img width="50" src="img/weather.png" >Метеостанция</h2>
+        </center>
+        <p>
+            Датчики температуры расположены как в жилых помещениях так и на улице. Также имеются датчики атмосферного давления и уличной влажности.
+        </p>
+        <center>
+            <b>
+                <table>
+                    <tr><th><img width="30" src="img/room.png" /> Помещение</th><th><img width="30" src="img/temp.png" />Температура</th></tr>
+                    <tr><td><center>Комната</center></td><td><center><font color="66FFFF"><div id="room"></div></font></center></td></tr>
+                    <tr><td><center>Веранда</center></td><td><center><font color="66FFFF"><div id="veranda"></div></font></center></td></tr>
+                    <tr><td><center>Кухня</center></td><td><center><font color="66FFFF"><div id="kitchen"></div></font></center></td></tr>
+                    <tr><td><center>Улица</center></td><td><center><font color="66FFFF"><div id="street"></div></font></center></td></tr>
+                    <tr><td><center>2ой этаж</center></td><td><center><font color="66FFFF"><div id="2nd"></div></font></center></td></tr>
+                    <tr><td><center>Земля</center></td><td><center><font color="66FFFF"><div id="ground"></div></font></center></td></tr>
+                </table>
+                <br>
+                <table>
+                    <tr><td><center><img width="10" src="img/hum.png" /> Уличная влажность</center></td><td><center><font color="66FFFF"><div id="hum"></div></font></center></td></tr>
+                </table>
+                <br>
+                <table>
+                    <tr><td><center><img width="30" src="img/pres.png" /> Атм. давление</center></td><td><center><font color="66FFFF"><div id="pres"></div></font></center></td></tr>
+                </table>
+            </b>
+        </center>
+        <br>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer>
+	<p class="credits"><a>Denisov Foundation &copy; 2018</a></a></p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script> <!-- Default JS -->
+<script src="/js/modules/meteo.js"></script>
+<script src="/js/modules/modules.js"></script>
+<script src="/js/pages.js"></script>
+<!-- End Js -->
+
+</body>
+</html>
